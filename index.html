@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>OSX Basic Calculator Clone</h1>
+    <div id="calc-container">
+        <div id="display-container">
+            <h2 id="display-text">0</h2>
+        </div>
+        <div id="buttons-container">
+            <button class="function-btn" id="ac-btn" onclick="acKeyPress()"><span>AC</span></button>
+            <button class="function-btn" id="plus-minus-btn"><span>+/-</span></button>
+            <button class="function-btn" id="percentage-btn"><span>%</span></button>
+            <button class="operation-btn" id="divide-btn"><span>/</span></button>
+            <button class="number-btn" id="seven-btn"><span>7</span></button>
+            <button class="number-btn" id="eight-btn"><span>8</span></button>
+            <button class="number-btn" id="nine-btn"><span>9</span></button>
+            <button class="operation-btn" id="multiply-btn"><span>X</span></button>
+            <button class="number-btn" id="four-btn"><span>4</span></button>
+            <button class="number-btn" id="five-btn"><span>5</span></button>
+            <button class="number-btn" id="six-btn"><span>6</span></button>
+            <button class="operation-btn" id="subtract-btn"><span>–</span></button>
+            <button class="number-btn" id="one-btn" onclick="oneKeyPress()"><span>1</span></button>
+            <button class="number-btn" id="two-btn"><span>2</span></button>
+            <button class="number-btn" id="three-btn"><span>3</span></button>
+            <button class="operation-btn" id="addition-btn" onclick="additionKeyPress()"><span>+</span></button>
+            <button class="number-btn" id="zero-btn"><span>0</span></button>
+            <button class="number-btn" id="decimal-btn"><span>.</span></button>
+            <button class="operation-btn" id="equals-btn" onclick="equalsKeyPress()"><span>=</span></button>
+        </div>
+    </div>
+
+    <script src="/scripts/app.js"></script>
+</body>
+</html>

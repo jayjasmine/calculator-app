@@ -1,0 +1,88 @@
+*, ::after, ::before {box-sizing: border-box; padding: 0; margin: 0; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 2em 0;
+}
+#calc-container {
+    background-color: darkgrey;
+    margin: auto;
+    width: 18em;
+    border-radius: 0.6em;
+}
+
+#display-container{
+    height: 6.3em;
+    border-radius: 0.6em 0.6em 0 0;
+    background-color: rgb(90, 90, 90);
+}
+
+#display-text {
+    text-align: right;
+    padding: .4em .3em;
+    font-size: 4em;
+    font-weight: 100;
+    color: white;
+
+
+}
+
+#buttons-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+button {
+    height: 4.5em; 
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.function-btn span, .operation-btn span {
+    font-size: 1.7em;
+}
+
+.number-btn span {
+    font-size: 2em;
+}
+
+
+
+.function-btn {
+    background-color: rgb(114, 114, 114);
+}
+.function-btn:active {
+    background-color: #979797;
+}
+.number-btn {
+    background-color: #979797
+}
+.number-btn:active {
+    background-color: lightgrey;
+}
+
+.operation-btn {
+    background-color: orange;
+    color: white;
+}
+
+.operation-btn:active {
+    background-color: #c29239;
+}
+
+#zero-btn { 
+    grid-column: span 2;
+    border-bottom-left-radius: 0.6em;
+}
+
+#equals-btn {
+    border-bottom-right-radius: 0.6em;
+}
